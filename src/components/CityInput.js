@@ -4,10 +4,12 @@ import './App.css'
 const CityInput = ({ onCityChange }) => {
   const [inputValue, setInputValue] = useState('');
 
+  //handling input value of input field
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
+  //making function to handle functionality of button
   const handleButtonClick = () => {
     onCityChange(inputValue);
     setInputValue('');
