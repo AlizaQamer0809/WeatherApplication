@@ -34,11 +34,13 @@ const App = () => {
 
   return (
     <div className='App'>
+      <h1 >Weather Forecast </h1>
+      <p>Your Weather Companion - Accurate Forecasts, Anywhere, Anytime!</p>
       <CityInput onCityChange={setCity} />
       {error ? (
         <p>Error: {error}</p>
       ) : (
-        weatherData && <WeatherInfo weatherData={weatherData} />
+        weatherData && <WeatherInfo city={city} weatherData={weatherData} />
       )}
     </div>
   );

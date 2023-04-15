@@ -1,14 +1,20 @@
 .App {
   display: flex;
   text-align: center;
-  background-color: teal;
   justify-content:center;
   flex-direction: column;
-  height: 620px;
+  height: 600px;
   
 }
+h1, h2{
+  font-family: "MongoDB Value Serif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
 .city-input-container {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(85, 122, 134, 0.4);
   backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 16px;
@@ -36,4 +42,18 @@
   padding: 8px 16px;
   cursor: pointer;
   font-size: 18px;
+}
+
+.city-button:hover{
+  background-color: #5f91c6;
+
+}
+
+ p{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Euclid Circular A", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #3d4f58;
 }
